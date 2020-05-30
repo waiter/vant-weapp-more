@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "SKU 组件",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "demo-block": "../../components/demo-block/index",
+    "van-sku": "../../dist/sku/index"
+  }
+}

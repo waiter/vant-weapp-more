@@ -8,7 +8,6 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
 const src = path.resolve(__dirname, '../packages');
-const icons = path.resolve(__dirname, '../node_modules/@vant/icons');
 
 const libConfig = path.resolve(__dirname, '../tsconfig.lib.json');
 const esConfig = path.resolve(__dirname, '../tsconfig.json');
@@ -88,8 +87,6 @@ tasks.buildExample = gulp.series(
     tsCompiler(exampleDir, exampleConfig),
     lessCompiler(exampleDir),
     staticCopier(exampleDir),
-    () =>
-      gulp.src(`${icons}/**/*`).pipe(gulp.dest(`${exampleDir}/@vant/icons`)),
     () => {
       gulp.watch(`${src}/**/*.less`, lessCompiler(exampleDir));
       gulp.watch(`${src}/**/*.wxml`, copier(exampleDir, 'wxml'));

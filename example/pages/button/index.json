@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "Button 按钮",
-  "usingComponents": {
-    "van-button": "@vant/weapp/button/index",
-    "demo-block": "../../components/demo-block/index"
-  }
-}

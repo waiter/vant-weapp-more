@@ -1,0 +1,3 @@
+<demo-block title="按钮类型" padding>
+  <van-sku class="demo-margin-right">默认按钮</van-sku>
+</demo-block>
