@@ -1,0 +1,13 @@
+<view class="van-sku-stepper-stock">
+  <view class="van-sku__stepper-title">{{ stepperTitle }}</view>
+  <van-stepper
+    class="van-sku__stepper"
+    integer
+    value="{{ currentNum }}"
+    min="{{ stepperMinLimit }}"
+    max="{{ stepperLimit }}"
+    disableInput="{{ disableStepperInput }}"
+    bind:overlimit="onOverLimit"
+    bind:change="onChange"
+  />
+</view>

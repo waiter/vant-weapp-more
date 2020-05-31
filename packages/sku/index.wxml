@@ -1,1 +1,3 @@
-<view>xxxx</view>
+<view>
+  <stepper />
+</view>
